@@ -10,6 +10,7 @@ public class ArmController:MonoBehaviour {
     public Player player;
 
     public Transform bullet;
+    public Transform specialAttack;
     List<Transform> spawnedBullets = new List<Transform>();
 
     private void Update() {
@@ -25,7 +26,13 @@ public class ArmController:MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
             Fire();
         }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            SpecialAttack();
+        }
     }
+
+
 
     private void UpdateArmDirection(Vector2 aimPt) {
         if (player.facingDirection==1)
@@ -35,8 +42,14 @@ public class ArmController:MonoBehaviour {
     }
 
     // Use in other scripts
-    public void Fire() {
-        Transform t= Instantiate(bullet, armSpawnPoint.position, armSpawnPoint.rotation);
+    public void Fire() 
+    {
+        Transform t = Instantiate(bullet, armSpawnPoint.position, armSpawnPoint.rotation);
         spawnedBullets.Add(t);
+    }
+
+    public void SpecialAttack()
+    {
+        Transform t = Instantiate(specialAttack, armSpawnPoint.position, armSpawnPoint.rotation);
     }
 }

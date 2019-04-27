@@ -657,6 +657,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: boss
       objectReference: {fileID: 0}
+    - target: {fileID: 3570557653970035396, guid: 4a1f095dcad614e56af8e4b39c5cef81,
+        type: 3}
+      propertyPath: m_TagString
+      value: Boss
+      objectReference: {fileID: 0}
     - target: {fileID: 1534563577699808318, guid: 4a1f095dcad614e56af8e4b39c5cef81,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -786,6 +791,12 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2041143264430225265}
+    - target: {fileID: 8630801697783140330, guid: c534dbdc7dc1185418cc56567730217b,
+        type: 3}
+      propertyPath: specialAttack
+      value: 
+      objectReference: {fileID: 7701080393560074259, guid: 7c99d798d2c854e55b834fec5b1867da,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
 --- !u!1001 &7118988722976143417
