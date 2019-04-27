@@ -172,8 +172,10 @@ MonoBehaviour:
   armRoot: {fileID: 7255802440884478223}
   armObject: {fileID: 3487399491553914355}
   armSpawnPoint: {fileID: 8637252584949058252}
-  player: {fileID: 0}
+  player: {fileID: 2041143264430225265}
   bullet: {fileID: 1316678530097453627, guid: d15751b6bb11ce140a85d2138fe658cd, type: 3}
+  specialAttack: {fileID: 7701080393560074259, guid: 7c99d798d2c854e55b834fec5b1867da,
+    type: 3}
 --- !u!1 &2041143264613738461
 GameObject:
   m_ObjectHideFlags: 0
