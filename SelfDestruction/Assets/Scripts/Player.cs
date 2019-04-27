@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     public bool touchGroundToAllowJump = false;
     public bool touchedGround = true;
 
-    float facingDirection;
+    float facingDirection = 1;
 
     // Start is called before the first frame update
     void Start()
