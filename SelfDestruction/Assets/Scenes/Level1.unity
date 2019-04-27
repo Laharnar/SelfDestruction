@@ -179,15 +179,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6590566874676877215, guid: 4f28127eb97de40daa33eaa477425edd,
-        type: 3}
-      propertyPath: jump
-      value: 1
+    - target: {fileID: 1034476049, guid: 4f28127eb97de40daa33eaa477425edd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.22
       objectReference: {fileID: 0}
-    - target: {fileID: 6590566874676877215, guid: 4f28127eb97de40daa33eaa477425edd,
-        type: 3}
-      propertyPath: jumpSpeed
-      value: 1.5
+    - target: {fileID: 1034476051, guid: 4f28127eb97de40daa33eaa477425edd, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f28127eb97de40daa33eaa477425edd, type: 3}
@@ -757,31 +755,6 @@ PrefabInstance:
     - target: {fileID: 1534563577699808318, guid: 4a1f095dcad614e56af8e4b39c5cef81,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6810419760531052582, guid: 4a1f095dcad614e56af8e4b39c5cef81,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 199b14a09d9254d0d80d915a3c981e9f, type: 2}
-    - target: {fileID: 6810419760531052582, guid: 4a1f095dcad614e56af8e4b39c5cef81,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 641669356971525107, guid: 4a1f095dcad614e56af8e4b39c5cef81,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 641669356971525107, guid: 4a1f095dcad614e56af8e4b39c5cef81,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 641669356971525107, guid: 4a1f095dcad614e56af8e4b39c5cef81,
-        type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
