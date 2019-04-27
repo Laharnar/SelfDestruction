@@ -6,6 +6,7 @@ public class HealthController:MonoBehaviour {
     public bool beInvulnerableOnHit = true;
     public float onHitInvulnerabilityDuration = 1;
     public Transform invulnerabilitySpriteTarget;// which sprite should dissapear when invulnerable
+    public GameObject deathFX;
 
     private void OnCollisionEnter2D(Collision2D collision) {
         Bullet bullet = collision.transform.GetComponent<Bullet>();
@@ -17,6 +18,7 @@ public class HealthController:MonoBehaviour {
     public void Damage(int amount) {
         health -= amount;
         if (health <= 0) {
+            Instantiate(deathFX, transform.position, transform.rotation);
             Destroy(gameObject);
         } else if (beInvulnerableOnHit) { 
             StartCoroutine(Invincibility());

@@ -196,6 +196,7 @@ MonoBehaviour:
   beInvulnerableOnHit: 1
   onHitInvulnerabilityDuration: 1
   invulnerabilitySpriteTarget: {fileID: 400877254}
+  deathFX: {fileID: 117145494144408272, guid: 02e6f772df25a4aa3938fbacfec47c61, type: 3}
 --- !u!1 &2041143264613738461
 GameObject:
   m_ObjectHideFlags: 0
