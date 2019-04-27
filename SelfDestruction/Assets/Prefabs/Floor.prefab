@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7042288196079028572}
   - component: {fileID: 790233006660049195}
   - component: {fileID: 1162459176142433481}
+  - component: {fileID: 2253367867385849325}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,6 +77,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCollision: {fileID: 7042288196079028572}
+--- !u!50 &2253367867385849325
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2339972152123053718}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &426354870032333126
 PrefabInstance:
   m_ObjectHideFlags: 0

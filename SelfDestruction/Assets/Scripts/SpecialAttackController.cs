@@ -12,5 +12,6 @@ public class SpecialAttackController : MonoBehaviour
     {
         Boss = GameObject.FindGameObjectWithTag("Boss");
         forceField.transform.position = Boss.transform.position;
+        Destroy(gameObject, 10);
     }
 }
