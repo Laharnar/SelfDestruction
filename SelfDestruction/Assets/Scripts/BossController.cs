@@ -122,19 +122,5 @@ public class BossController : MonoBehaviour
     }
 
 
-        //private void Start()
-        //{
-        //    StartTimer(3);
-        //}
 
-        //public void StartTimer(float duration)
-        //{
-        //    StartCoroutine(RunTimer(duration));
-        //}
-
-        //private IEnumerator RunTimer(float duration)
-        //{
-        //    yield return new WaitForSeconds(duration);
-        //    Debug.Log("EVENT!");
-        //}
 }
