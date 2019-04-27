@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5951330829244865320}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ProjectileSpawnAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 1526522297618070551}
   - component: {fileID: 6930165304018632234}
   m_Layer: 0
-  m_Name: New Sprite (1)
+  m_Name: VAMPIRE-roka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,7 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4754456838145765611}
   m_Layer: 0
-  m_Name: Hand (2)
+  m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
