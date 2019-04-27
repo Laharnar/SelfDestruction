@@ -20,22 +20,13 @@ public class ArmController:MonoBehaviour {
                 i--;
             }
         }
-
-        Vector3 aimPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Debug.Log("AimPt "+aimPt);
-        UpdateArmDirection(aimPt);
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
-            Fire();
-        }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            SpecialAttack();
-        }
+        
     }
 
 
-
-    private void UpdateArmDirection(Vector2 aimPt) {
+    
+    
+    public void UpdateArmDirection(Vector2 aimPt) {
         armRoot.right =  aimPt - (Vector2)transform.position;
         //else
         //   armRoot.right = -aimPt;
