@@ -9,7 +9,7 @@ public class HealthController:MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision) {
         Bullet bullet = collision.transform.GetComponent<Bullet>();
-        if (bullet != null) {
+        if (bullet != null && bullet.ignoreTag != tag) {
             Damage(bullet.damage);
         }
     }

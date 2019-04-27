@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] float jump;
     bool jumped = false;
     public float jumpSpeed = 1f;
+    public float jumpHeight = 1f;
     public float moveSpeed = 1f;
     public float fallSpeed = 1f;
 
@@ -60,7 +61,7 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Ground") {
             jump = 0;
-                touchedGround = true;
+            touchedGround = true;
         }
     }
 
