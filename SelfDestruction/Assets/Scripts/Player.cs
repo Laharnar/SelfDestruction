@@ -55,8 +55,7 @@ public class Player : MonoBehaviour
 
 
         Vector3 aimPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        aimPt.x *= facingDirection;
-        arm.UpdateArmDirection(aimPt);
+        arm.UpdateArmDirection(aimPt, facingDirection < 0); // for negative, turn the aiming
         if (Input.GetKey(KeyCode.Mouse0) && fireTime < Time.time) {
             fireTime = Time.time + fireRate;
             arm.Fire();
