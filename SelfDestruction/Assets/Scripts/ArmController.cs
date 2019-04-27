@@ -20,25 +20,16 @@ public class ArmController:MonoBehaviour {
                 i--;
             }
         }
-
-        Vector2 aimPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        UpdateArmDirection(aimPt);
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
-            Fire();
-        }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            SpecialAttack();
-        }
+        
     }
 
 
-
-    private void UpdateArmDirection(Vector2 aimPt) {
-        if (player.facingDirection==1)
-            armRoot.right = aimPt;
-        else
-            armRoot.right = -aimPt;
+    
+    
+    public void UpdateArmDirection(Vector2 aimPt) {
+        armRoot.right =  aimPt - (Vector2)transform.position;
+        //else
+        //   armRoot.right = -aimPt;
     }
 
     // Use in other scripts

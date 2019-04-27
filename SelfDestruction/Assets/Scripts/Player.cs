@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Player : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rigidbody;
@@ -17,10 +16,13 @@ public class Player : MonoBehaviour
     public bool touchedGround = true;
 
     public float facingDirection = 1;
+    public ArmController arm;
 
     // Start is called before the first frame update
     void Start()
     {
+        if(arm == null)
+            arm = GetComponent<ArmController>();
         StartCoroutine(JumpHandler());
     }
 
@@ -41,7 +43,18 @@ public class Player : MonoBehaviour
         }
         // left/right scaling
         transform.localScale = new Vector3(facingDirection, 1, 1);
-        
+
+
+        Vector3 aimPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        arm.UpdateArmDirection(aimPt);
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+
+            arm.Fire();
+        }
+
+        if (Input.GetKeyDown(KeyCode.X)) {
+            arm.SpecialAttack();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
