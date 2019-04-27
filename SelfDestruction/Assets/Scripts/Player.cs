@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
     public float facingDirection = 1;
     public ArmController arm;
 
+    public float fireRate = 0.1f;
+    float fireTime;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,13 +36,17 @@ public class Player : MonoBehaviour
     {
         // left, right
         float horizontalInput = Input.GetAxisRaw("Horizontal");
-        if (touchGroundToAllowJump && touchedGround || !touchGroundToAllowJump){
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                jumped = true;
-                touchedGround = false;
-            }
+        if (Input.GetKeyDown(KeyCode.Space) && touchedGround) {
+            rigidbody.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+            jumped = true;
+            touchedGround = false;
         }
-        moveDone.x = horizontalInput*moveSpeed*Time.deltaTime;
+        rigidbody.AddForce(Vector2.right * horizontalInput * moveSpeed, ForceMode2D.Force);
+
+        /*if (touchGroundToAllowJump && touchedGround || !touchGroundToAllowJump){
+            
+        }*/
+        //moveDone.x = horizontalInput*moveSpeed*Time.deltaTime;
         if (horizontalInput != 0) {
             facingDirection = horizontalInput;
         }
@@ -47,9 +55,10 @@ public class Player : MonoBehaviour
 
 
         Vector3 aimPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        aimPt.x *= facingDirection;
         arm.UpdateArmDirection(aimPt);
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
-
+        if (Input.GetKey(KeyCode.Mouse0) && fireTime < Time.time) {
+            fireTime = Time.time + fireRate;
             arm.Fire();
         }
 
@@ -66,6 +75,7 @@ public class Player : MonoBehaviour
     }
 
     IEnumerator JumpHandler() {
+        yield break;
         while (true) {
             if (jumped) {
                 jump = jumpSpeed;
@@ -84,7 +94,7 @@ public class Player : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        rigidbody.MovePosition((Vector2)transform.position + moveDone);
+       // rigidbody.MovePosition((Vector2)transform.position + moveDone);
         /*if (jumped == false) {
             jump -= 0.1f;
             if (jump < 0) {
