@@ -7,6 +7,7 @@ public class ArmController:MonoBehaviour {
     public Transform armRoot;// rotate this
     public Transform armObject;
     public Transform armSpawnPoint;
+    public Player player;
 
     public Transform bullet;
     List<Transform> spawnedBullets = new List<Transform>();
@@ -27,7 +28,10 @@ public class ArmController:MonoBehaviour {
     }
 
     private void UpdateArmDirection(Vector2 aimPt) {
-        armRoot.right = aimPt;
+        if (player.facingDirection==1)
+            armRoot.right = aimPt;
+        else
+            armRoot.right = -aimPt;
     }
 
     // Use in other scripts
