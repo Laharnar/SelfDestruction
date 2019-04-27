@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     public bool touchGroundToAllowJump = false;
     public bool touchedGround = true;
 
+    float facingDirection;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +36,11 @@ public class Player : MonoBehaviour
             }
         }
         moveDone.x = horizontalInput*moveSpeed*Time.deltaTime;
-
+        if (horizontalInput != 0) {
+            facingDirection = horizontalInput;
+        }
+        // left/right scaling
+        transform.localScale = new Vector3(facingDirection, 1, 1);
         
     }
 
@@ -43,7 +49,6 @@ public class Player : MonoBehaviour
             jump = 0;
                 touchedGround = true;
         }
-
     }
 
     IEnumerator JumpHandler() {
