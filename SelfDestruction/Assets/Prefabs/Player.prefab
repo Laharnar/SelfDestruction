@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 2041143264430225265}
   - component: {fileID: 2041143264430225166}
   - component: {fileID: 8630801697783140330}
+  - component: {fileID: 1756896419}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -136,6 +137,7 @@ MonoBehaviour:
   touchGroundToAllowJump: 1
   touchedGround: 0
   facingDirection: 1
+  arm: {fileID: 8630801697783140330}
 --- !u!50 &2041143264430225166
 Rigidbody2D:
   serializedVersion: 4
@@ -176,6 +178,22 @@ MonoBehaviour:
   bullet: {fileID: 1316678530097453627, guid: d15751b6bb11ce140a85d2138fe658cd, type: 3}
   specialAttack: {fileID: 7701080393560074259, guid: 7c99d798d2c854e55b834fec5b1867da,
     type: 3}
+--- !u!114 &1756896419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041143264430225167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff7b9a0ed60564aaad8f7727b61508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  beInvulnerableOnHit: 1
+  onHitInvulnerabilityDuration: 1
+  invulnerabilitySpriteTarget: {fileID: 400877254}
 --- !u!1 &2041143264613738461
 GameObject:
   m_ObjectHideFlags: 0

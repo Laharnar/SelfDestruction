@@ -677,6 +677,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1025749518 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400877254, guid: c534dbdc7dc1185418cc56567730217b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1756896416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1040490815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1200,6 +1206,7 @@ MonoBehaviour:
   armSpawnPoint: {fileID: 342652745}
   player: {fileID: 0}
   bullet: {fileID: 1316678530097453627, guid: d15751b6bb11ce140a85d2138fe658cd, type: 3}
+  specialAttack: {fileID: 0}
 --- !u!114 &1717552347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,6 +1234,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  beInvulnerableOnHit: 1
+  onHitInvulnerabilityDuration: 1
+  invulnerabilitySpriteTarget: {fileID: 0}
 --- !u!1001 &1756896416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1337,6 +1347,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  beInvulnerableOnHit: 1
+  onHitInvulnerabilityDuration: 1
+  invulnerabilitySpriteTarget: {fileID: 1025749518}
 --- !u!1001 &1907569086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1504,6 +1517,11 @@ PrefabInstance:
       propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3951504358282034354, guid: 7c99d798d2c854e55b834fec5b1867da,
+        type: 3}
+      propertyPath: Boss
+      value: 
+      objectReference: {fileID: 1717552343}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c99d798d2c854e55b834fec5b1867da, type: 3}
 --- !u!1001 &1992880757
