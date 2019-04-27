@@ -131,9 +131,10 @@ MonoBehaviour:
   rigidbody: {fileID: 2041143264430225166}
   moveDone: {x: 0, y: 0}
   jump: 0
-  jumpSpeed: 0.75
+  jumpSpeed: 1.25
+  jumpHeight: 1
   moveSpeed: 7
-  fallSpeed: 4
+  fallSpeed: 5
   touchGroundToAllowJump: 1
   touchedGround: 0
   facingDirection: 1
@@ -153,7 +154,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

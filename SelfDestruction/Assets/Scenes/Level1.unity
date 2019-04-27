@@ -1157,18 +1157,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16e5542d3cd7243378de3c3cfe645d81, type: 3}
---- !u!114 &2041143264430225265 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2041143264430225265, guid: c534dbdc7dc1185418cc56567730217b,
-    type: 3}
-  m_PrefabInstance: {fileID: 6302739192749747478}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09798bb52bdbf4499bef34a21bac765, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4048520968237620550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1310,32 +1298,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2041143264430225265, guid: c534dbdc7dc1185418cc56567730217b,
-        type: 3}
-      propertyPath: fallSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2041143264430225265, guid: c534dbdc7dc1185418cc56567730217b,
-        type: 3}
-      propertyPath: jumpSpeed
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2041143264430225166, guid: c534dbdc7dc1185418cc56567730217b,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8630801697783140330, guid: c534dbdc7dc1185418cc56567730217b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 2041143264430225265}
-    - target: {fileID: 8630801697783140330, guid: c534dbdc7dc1185418cc56567730217b,
-        type: 3}
-      propertyPath: specialAttack
-      value: 
-      objectReference: {fileID: 7701080393560074259, guid: 7c99d798d2c854e55b834fec5b1867da,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
 --- !u!1001 &7118988722976143417
