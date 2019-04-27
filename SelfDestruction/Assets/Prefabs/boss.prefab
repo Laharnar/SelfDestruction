@@ -4865,7 +4865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aff7b9a0ed60564aaad8f7727b61508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 20
   beInvulnerableOnHit: 1
   onHitInvulnerabilityDuration: 1
   invulnerabilitySpriteTarget: {fileID: 0}

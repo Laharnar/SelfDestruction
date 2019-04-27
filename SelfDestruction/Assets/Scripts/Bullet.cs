@@ -19,7 +19,6 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision");
         if (collision.gameObject.tag == "Ground")
         {
             Instantiate(Splash, transform.position, transform.rotation);
