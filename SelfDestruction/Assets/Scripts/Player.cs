@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] float jump;
     bool jumped = false;
     public float jumpSpeed = 1f;
-    public float jumpHeight = 1f;
+    //public float jumpHeight = 1f;
     public float moveSpeed = 1f;
     public float fallSpeed = 1f;
 
@@ -22,7 +22,8 @@ public class Player : MonoBehaviour
     public float fireRate = 0.1f;
     float fireTime;
 
-
+    public Animator playerAnimation;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour
             rigidbody.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
             jumped = true;
             touchedGround = false;
+            playerAnimation.SetTrigger("Jump");
         }
         rigidbody.AddForce(Vector2.right * horizontalInput * moveSpeed, ForceMode2D.Force);
 
