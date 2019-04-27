@@ -131,14 +131,15 @@ MonoBehaviour:
   rigidbody: {fileID: 2041143264430225166}
   moveDone: {x: 0, y: 0}
   jump: 0
-  jumpSpeed: 14.3
+  jumpSpeed: 7
   jumpHeight: 4.1
-  moveSpeed: 126
+  moveSpeed: 20
   fallSpeed: 4
   touchGroundToAllowJump: 1
   touchedGround: 1
   facingDirection: 1
   arm: {fileID: 8630801697783140330}
+  fireRate: 0.1
 --- !u!50 &2041143264430225166
 Rigidbody2D:
   serializedVersion: 4
