@@ -25,6 +25,13 @@ public class Bullet : MonoBehaviour
             Instantiate(Splash, transform.position, transform.rotation);
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "Boss")
+        {
+            Instantiate(Splash, transform.position, transform.rotation);
+            collision.gameObject.GetComponent<HealthController>().Damage(1);
+            Destroy(gameObject);
+
+        }
 
     }
 }

@@ -97,6 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 0.5
   Splash: {fileID: 117145494144408272, guid: 11f6220222934489fa6bfe9db522d77c, type: 3}
+  damage: 1
 --- !u!58 &5610164163798802886
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -123,7 +124,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1316678530097453624}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
