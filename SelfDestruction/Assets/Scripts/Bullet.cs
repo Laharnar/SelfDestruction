@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     public string ignoreTag = "Player";
 
     private void Start() {
-        Destroy(gameObject, 10);
+        Destroy(gameObject, 2);
     }
 
     private void Update()
