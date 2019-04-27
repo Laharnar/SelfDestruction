@@ -135,6 +135,7 @@ MonoBehaviour:
   fallSpeed: 4
   touchGroundToAllowJump: 1
   touchedGround: 0
+  facingDirection: 1
 --- !u!50 &2041143264430225166
 Rigidbody2D:
   serializedVersion: 4
@@ -171,6 +172,7 @@ MonoBehaviour:
   armRoot: {fileID: 7255802440884478223}
   armObject: {fileID: 3487399491553914355}
   armSpawnPoint: {fileID: 8637252584949058252}
+  player: {fileID: 0}
   bullet: {fileID: 1316678530097453627, guid: d15751b6bb11ce140a85d2138fe658cd, type: 3}
 --- !u!1 &2041143264613738461
 GameObject:
@@ -240,7 +242,7 @@ PrefabInstance:
     - target: {fileID: 4681120619865703138, guid: cf27cd6bf03eb7843988c594faa306f2,
         type: 3}
       propertyPath: m_Name
-      value: Hand2
+      value: Player_Hand2
       objectReference: {fileID: 0}
     - target: {fileID: 4754456838145765611, guid: cf27cd6bf03eb7843988c594faa306f2,
         type: 3}
@@ -320,7 +322,7 @@ PrefabInstance:
     - target: {fileID: 4681120619865703138, guid: cf27cd6bf03eb7843988c594faa306f2,
         type: 3}
       propertyPath: m_Name
-      value: Hand
+      value: Player_Hand
       objectReference: {fileID: 0}
     - target: {fileID: 4754456838145765611, guid: cf27cd6bf03eb7843988c594faa306f2,
         type: 3}
