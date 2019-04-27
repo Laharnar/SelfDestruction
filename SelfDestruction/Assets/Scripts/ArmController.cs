@@ -21,7 +21,8 @@ public class ArmController:MonoBehaviour {
             }
         }
 
-        Vector2 aimPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 aimPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Debug.Log("AimPt "+aimPt);
         UpdateArmDirection(aimPt);
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
             Fire();
@@ -35,10 +36,9 @@ public class ArmController:MonoBehaviour {
 
 
     private void UpdateArmDirection(Vector2 aimPt) {
-        if (player.facingDirection==1)
-            armRoot.right = aimPt;
-        else
-            armRoot.right = -aimPt;
+        armRoot.right =  aimPt - (Vector2)transform.position;
+        //else
+        //   armRoot.right = -aimPt;
     }
 
     // Use in other scripts
