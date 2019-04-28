@@ -13,9 +13,13 @@ public class CameraController:MonoBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.R)){
-            SceneManager.LoadScene("Grave Scene"); }
-          
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Main");
+        }
+            
+        
         if (boss) {
 
             int x = boss.bossStage;
