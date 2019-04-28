@@ -21,6 +21,7 @@ public class BossController : MonoBehaviour
     public HealthController hp;
     public Animator bossAnimator;
     public Animator bloodAnimator;
+    public int startAt = 0;
     public BossAction[] bossScript;
 
     bool waitAnimationEnd = false;
@@ -73,7 +74,7 @@ public class BossController : MonoBehaviour
     }
 
     public IEnumerator ExecuteScript(params BossAction[] directions) {
-        for (int i = 0; i < directions.Length; i++) {
+        for (int i = startAt; i < directions.Length; i++) {
             yield return StartCoroutine(ExecuteSingleCommand(directions[i]));
             while (waitAnimationEnd) {
                 yield return null;
