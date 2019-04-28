@@ -22,7 +22,8 @@ public class Player : MonoBehaviour
 
     public float fireRate = 0.1f;
     float fireTime;
-    public int sPCount=0;
+    public float sPCount;
+    public float sPMax = 6;
     [SerializeField] private Text sPCounter;
 
     public Animator playerAnimation;

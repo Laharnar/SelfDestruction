@@ -8,8 +8,9 @@ public class HealthController:MonoBehaviour {
     public float onHitInvulnerabilityDuration = 1;
     public Transform invulnerabilitySpriteTarget;// which sprite should dissapear when invulnerable
     public GameObject deathFX;
-
+    
     private void OnCollisionEnter2D(Collision2D collision) {
+        
         Bullet bullet = collision.transform.GetComponent<Bullet>();
         if (bullet != null && bullet.ignoreTag != tag) {
             Damage(bullet.damage);
