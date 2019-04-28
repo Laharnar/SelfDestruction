@@ -85,9 +85,12 @@ public class Player : MonoBehaviour
 
         }
 
+        if (Time.time > 60) {
+            GetComponent<HealthController>().Damage(999999);
+        }
 
     }
-
+    
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Ground") {
             jump = 0;
