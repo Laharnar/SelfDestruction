@@ -13,8 +13,17 @@ public enum BossAction {
     Wait1,
     Wait2,
     Wait5,
-    Shoot1,
-    Shoot2
+    ShootHeavy,
+    ShootLight,
+    AdditionalAction1,
+    AdditionalAction2,
+    AdditionalAction3,
+    AdditionalAction4,
+    AdditionalAction5,
+    AdditionalAction6,
+    AdditionalAction7,
+    AdditionalAction8,
+    AdditionalAction9
 }
 public class BossController : MonoBehaviour
 {
@@ -22,14 +31,19 @@ public class BossController : MonoBehaviour
     public Animator bossAnimator;
     public Animator bloodAnimator;
     public int startAt = 0;
+    public ArmController gun;
     public BossAction[] bossScript;
+    public BloodAnimationController bloodFill;
 
     bool waitAnimationEnd = false;
     internal int bossStage;
 
+    Transform player;
+
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindWithTag("Player").transform;
         BossFight(300);
     }
 
@@ -44,6 +58,7 @@ public class BossController : MonoBehaviour
         bossAnimator.SetInteger("BounceAnimation", UnityEngine.Random.Range(0, 2));
     }
 
+    #region movement
     void GoUpLeft()
     {
         bossAnimator.SetTrigger("GoUpLeft");
@@ -68,6 +83,8 @@ public class BossController : MonoBehaviour
     void GoHorizontalRight() {
         bossAnimator.SetTrigger("GoHorizontalRight");
     }
+    #endregion
+
     public void BossFight(float duration)
     {
         StartCoroutine(BossMove(duration));
@@ -122,10 +139,43 @@ public class BossController : MonoBehaviour
                 yield return new WaitForSeconds(5);
                 waitAnimationEnd = false;
                 break;
+            case BossAction.ShootHeavy:
+                if (bloodFill.bloodWellFull) {
+                    bloodFill.bloodWellFull = false;
+                    yield return new WaitForSeconds(2);
+                    bloodAnimator.SetTrigger("EmptyBlood");
+                    ShootHeavy();
+                }
+                waitAnimationEnd = false;
+                break;
+            case BossAction.ShootLight:
+                ShootLight();
+                yield return new WaitForSeconds(0.2f);
+                ShootLight();
+                yield return new WaitForSeconds(0.2f);
+                ShootLight();
+                yield return new WaitForSeconds(0.2f);
+                ShootLight();
+                yield return new WaitForSeconds(0.2f);
+                ShootLight();
+                yield return new WaitForSeconds(0.2f);
+                waitAnimationEnd = false;
+                break;
             default:
                 break;
         }
         yield return null;
+    }
+
+    void ShootLight() {
+        gun.armRoot.up = -((Vector2)player.position - (Vector2)transform.position);
+        gun.Fire();
+    }
+
+    void ShootHeavy() {
+        gun.armRoot.up = -((Vector2)player.position - (Vector2)transform.position);
+
+        gun.SpecialAttack();
     }
 
     IEnumerator BossMove(float duration)
