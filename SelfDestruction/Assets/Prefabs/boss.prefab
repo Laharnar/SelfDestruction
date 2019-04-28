@@ -12625,7 +12625,7 @@ ParticleSystem:
 --- !u!199 &305665089927264035
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12660,7 +12660,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -13009,15 +13009,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3200634507804162653, guid: cf27cd6bf03eb7843988c594faa306f2,
-        type: 3}
-      propertyPath: m_Name
-      value: SpriteHand
-      objectReference: {fileID: 0}
     - target: {fileID: 2636612494603918642, guid: cf27cd6bf03eb7843988c594faa306f2,
         type: 3}
       propertyPath: m_Name
       value: SpawnPointHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200634507804162653, guid: cf27cd6bf03eb7843988c594faa306f2,
+        type: 3}
+      propertyPath: m_Name
+      value: SpriteHand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf27cd6bf03eb7843988c594faa306f2, type: 3}

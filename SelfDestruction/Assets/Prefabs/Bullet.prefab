@@ -99,6 +99,7 @@ MonoBehaviour:
   Splash: {fileID: 117145494144408272, guid: 11f6220222934489fa6bfe9db522d77c, type: 3}
   damage: 1
   ignoreTag: Player
+  isPlayerBullet: 1
 --- !u!58 &5610164163798802886
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4810,7 +4811,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0

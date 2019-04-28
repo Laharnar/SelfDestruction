@@ -72,6 +72,7 @@ public class Player : MonoBehaviour
         Vector3 aimPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         arm.UpdateArmDirection(aimPt, facingDirection < 0); // for negative, turn the aiming
         if (Input.GetKey(KeyCode.Mouse0) && fireTime < Time.time) {
+            fireTime = Time.time + fireRate;
             if (sPCount > 0)
             {
                 arm.SpecialAttack();
@@ -79,7 +80,7 @@ public class Player : MonoBehaviour
                 sPCounter.text = "" + sPCount;
                 ChangeSprite();
             }
-            fireTime = Time.time + fireRate;
+
             arm.Fire();
 
         }
