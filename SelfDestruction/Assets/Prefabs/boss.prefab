@@ -12862,7 +12862,7 @@ MonoBehaviour:
   - 1
   - 2
   - 5
-  - 1
+  - 2.5
   - 1
   - 1
   - 1
@@ -12879,8 +12879,11 @@ MonoBehaviour:
   bouncingAnimator: {fileID: 993542234}
   startAt: 0
   gun: {fileID: 4986251382058301798}
-  bossScript: 070000000a0000000a0000000900000003000000040000000700000006000000070000000400000007000000040000000100000000000000
+  bossScript: 090000000900000009000000010000000a0000000a000000020000000a000000000000000a000000090000000a000000010000000a000000090000000a000000010000000a000000020000000a0000000a000000000000000900000003000000090000000a000000090000000a00000003000000000000000600000009000000000000000a00000003000000090000000a000000010000000a0000000a00000009000000000000000a000000090000000a000000
   bloodFill: {fileID: 2140212069}
+  crosshairPrefab: {fileID: 3059880805665700224, guid: b95d9b7742c87704fbf2313b4687498a,
+    type: 3}
+  crosshairExplosion: {fileID: 0}
 --- !u!50 &6666199566244761803
 Rigidbody2D:
   serializedVersion: 4
@@ -13009,15 +13012,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2636612494603918642, guid: cf27cd6bf03eb7843988c594faa306f2,
-        type: 3}
-      propertyPath: m_Name
-      value: SpawnPointHand
-      objectReference: {fileID: 0}
     - target: {fileID: 3200634507804162653, guid: cf27cd6bf03eb7843988c594faa306f2,
         type: 3}
       propertyPath: m_Name
       value: SpriteHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636612494603918642, guid: cf27cd6bf03eb7843988c594faa306f2,
+        type: 3}
+      propertyPath: m_Name
+      value: SpawnPointHand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf27cd6bf03eb7843988c594faa306f2, type: 3}
