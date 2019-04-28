@@ -20,12 +20,8 @@ public class ArmController:MonoBehaviour {
                 i--;
             }
         }
-        
     }
 
-
-    
-    
     public void UpdateArmDirection(Vector2 aimPt, bool turn) {
         if (!turn) {
             armRoot.right = aimPt - (Vector2)transform.position;
