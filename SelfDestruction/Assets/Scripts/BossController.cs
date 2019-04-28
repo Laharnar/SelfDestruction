@@ -18,16 +18,30 @@ public enum BossAction {
 }
 public class BossController : MonoBehaviour
 {
-
+    public HealthController hp;
     public Animator bossAnimator;
     public BossAction[] bossScript;
 
     bool waitAnimationEnd = false;
+    internal int bossStage;
 
     // Start is called before the first frame update
     void Start()
     {
         BossFight(300);
+    }
+
+    private void Update() {
+        if (hp == null) {
+            Debug.Log("Assign hp controller. aborting update.");
+            return;
+        }
+        if (Time.time > 2) {
+            bossStage = 1;
+        }
+        if (Time.time > 4) {
+            bossStage = 2;
+        }
     }
 
     void GoUpLeft()
@@ -121,6 +135,5 @@ public class BossController : MonoBehaviour
         }
     }
 
-
-
+    
 }
