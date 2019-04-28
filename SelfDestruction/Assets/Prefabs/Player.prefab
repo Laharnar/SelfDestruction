@@ -131,15 +131,16 @@ MonoBehaviour:
   rigidbody: {fileID: 2041143264430225166}
   moveDone: {x: 0, y: 0}
   jump: 0
-  jumpSpeed: 25
+  jumpSpeed: 12
   moveSpeed: 20
-  fallSpeed: 4
+  fallSpeed: 7
   touchGroundToAllowJump: 1
   touchedGround: 1
   facingDirection: 1
   arm: {fileID: 8630801697783140330}
   fireRate: 0.1
   sPCount: 0
+  sPMax: 6
   sPCounter: {fileID: 0}
   playerAnimation: {fileID: 0}
   powerupBody: {fileID: 21300000, guid: 0f15d5e0457bb4d09a97b26a50c8692e, type: 3}
@@ -206,6 +207,7 @@ MonoBehaviour:
   onHitInvulnerabilityDuration: 1
   invulnerabilitySpriteTarget: {fileID: 400877254}
   deathFX: {fileID: 117145494144408272, guid: 02e6f772df25a4aa3938fbacfec47c61, type: 3}
+  maxHealth: 0
 --- !u!1 &2041143264613738461
 GameObject:
   m_ObjectHideFlags: 0

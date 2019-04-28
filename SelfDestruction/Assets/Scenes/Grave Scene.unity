@@ -358,6 +358,11 @@ PrefabInstance:
       propertyPath: m_OcclusionCulling
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7879499895836300777, guid: e0761c296f91f6343b54f7b921b06495,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 91.09
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0761c296f91f6343b54f7b921b06495, type: 3}
 --- !u!1 &111095565
@@ -4266,14 +4271,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2041143264430225265, guid: c534dbdc7dc1185418cc56567730217b,
         type: 3}
-      propertyPath: fallSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2041143264430225265, guid: c534dbdc7dc1185418cc56567730217b,
-        type: 3}
-      propertyPath: jumpSpeed
-      value: 12
-      objectReference: {fileID: 0}
+      propertyPath: sPCounter
+      value: 
+      objectReference: {fileID: 852397682}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
 --- !u!114 &1660619699 stripped
