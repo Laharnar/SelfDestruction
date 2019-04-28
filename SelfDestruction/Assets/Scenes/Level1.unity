@@ -1409,6 +1409,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1756896419, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
+      propertyPath: beInvulnerableOnHit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400877255, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400877255, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400877255, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
 --- !u!1001 &7118988722976143417
@@ -1650,7 +1666,7 @@ PrefabInstance:
     - target: {fileID: 3458980335823285624, guid: c86de2c1c4e564ecab4938eaa213d04b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.4000015
+      value: 3.399994
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c86de2c1c4e564ecab4938eaa213d04b, type: 3}

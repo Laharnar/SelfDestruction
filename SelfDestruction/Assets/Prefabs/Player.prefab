@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  beInvulnerableOnHit: 1
+  beInvulnerableOnHit: 0
   onHitInvulnerabilityDuration: 1
   invulnerabilitySpriteTarget: {fileID: 400877254}
   deathFX: {fileID: 117145494144408272, guid: 02e6f772df25a4aa3938fbacfec47c61, type: 3}
