@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BossHPBarController : MonoBehaviour
+public class HPBarController : MonoBehaviour
 {
     public Image image;
-    public HealthController bosshp;
-    private float bossmaxHP;
+    public HealthController hp;
+    private float maxHP;
 
     // Start is called before the first frame update
     void Start()
     {
-        bossmaxHP = bosshp.health;
+        maxHP = hp.health;
     }
 
     // Update is called once per frame
     void Update()
     {
-        image.fillAmount = bosshp.health / bossmaxHP;
+        image.fillAmount = hp.health / maxHP;
     }
 }
