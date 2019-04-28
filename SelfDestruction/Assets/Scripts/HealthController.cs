@@ -9,6 +9,8 @@ public class HealthController:MonoBehaviour {
     public Transform invulnerabilitySpriteTarget;// which sprite should dissapear when invulnerable
     public GameObject deathFX;
     public float maxHealth;
+    public Animator animator;
+    public string onDeathTriggerOnAnimation;
 
     private void Start()
     {
@@ -27,15 +29,13 @@ public class HealthController:MonoBehaviour {
     public void Damage(int amount) {
         health -= amount;
         if (health <= 0) {
+            if (animator)
+                animator.SetTrigger(onDeathTriggerOnAnimation);
             Instantiate(deathFX, transform.position, transform.rotation);
             Destroy(gameObject);
-        } else if (beInvulnerableOnHit) { 
+        } else if (beInvulnerableOnHit) {
             StartCoroutine(Invincibility());
         }
-    }
-
-    internal bool LessThan(float v) {
-        throw new NotImplementedException();
     }
 
     IEnumerator Invincibility() {
