@@ -20,12 +20,12 @@ public class VendingMachineSPController : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
+            player.ChangeSprite();
             if (Time.time > collectTime && player.sPCount < player.sPMax)
             {
                 collectTime = Time.time + collectRate;
                 player.sPCount++;
                 collision.gameObject.GetComponent<HealthController>().Damage(5);
-                player.ChangeSprite();
             }
         }
     }
