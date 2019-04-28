@@ -32,10 +32,6 @@ public class BossController : MonoBehaviour
     }
 
     private void Update() {
-        if (hp == null) {
-            Debug.Log("Assign hp controller. aborting update.");
-            return;
-        }
         if (Time.time > 2) {
             bossStage = 1;
         }
