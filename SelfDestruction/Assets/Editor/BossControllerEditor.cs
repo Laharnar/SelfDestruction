@@ -16,13 +16,18 @@ public class BossControllerEditor: Editor {
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("" + time, GUILayout.MaxWidth(20));
 
-            t.bossScript[i] = (BossAction)EditorGUILayout.EnumFlagsField(t.bossScript[i]);
+            t.bossScript[i] = (BossAction)EditorGUILayout.EnumPopup(t.bossScript[i]);
 
             if ((int)t.bossScript[i] < t.actionTimes.Length)
                 time += t.actionTimes[(int)t.bossScript[i]];
 
-            if (GUILayout.Button("Remove")) {
+            if (GUILayout.Button("-")) {
                 t.bossScript.RemoveAt(i);
+                i--;
+                continue;
+            }
+            if (GUILayout.Button("+")) {
+                t.bossScript.Insert(i, BossAction.Wait1);
                 i--;
                 continue;
             }
