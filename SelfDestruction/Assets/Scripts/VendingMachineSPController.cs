@@ -8,6 +8,8 @@ public class VendingMachineSPController : MonoBehaviour
     [SerializeField] private Text sPCounter;
     private int sPCount=0;
     private Player player;
+    float collectTime;
+    float collectRate = 0.2f;
 
     private void Start()
     {
@@ -16,10 +18,13 @@ public class VendingMachineSPController : MonoBehaviour
 
     private void OnCollisionStay2D (Collision2D collision)
     {
+
         if (collision.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.B))
+
+            if (Time.time > collectTime)
             {
+                collectTime = Time.time + collectRate;
                 Debug.Log("you bought a superpower");
                 player.sPCount++;
                 sPCount = player.sPCount;

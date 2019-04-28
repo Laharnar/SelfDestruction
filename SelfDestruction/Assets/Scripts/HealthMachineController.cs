@@ -8,7 +8,7 @@ public class HealthMachineController : MonoBehaviour
 
     private Player player;
     private HealthController playerHealth;
-    private int healingPerSecond=5;
+    private int healingPerSecond=10;
 
     private void Start()
     {
