@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class VendingMachineSPController : MonoBehaviour
 {
-    [SerializeField] private Text sPCounter;
+    private Text sPCounter;
     private Player player;
     float collectTime;
     float collectRate = 0.2f;
@@ -15,7 +15,7 @@ public class VendingMachineSPController : MonoBehaviour
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
     }
 
-    private void OnCollisionStay2D (Collision2D collision)
+    private void OnTriggerStay2D (Collider2D collision)
     {
 
         if (collision.gameObject.tag == "Player")
