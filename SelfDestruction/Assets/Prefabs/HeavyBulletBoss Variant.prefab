@@ -7,11 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7405469430649935428, guid: 5bc11926ef9873b4881e97bb081955c4,
-        type: 3}
-      propertyPath: m_Name
-      value: HeavyBulletBoss
-      objectReference: {fileID: 0}
     - target: {fileID: 7405469430649935431, guid: 5bc11926ef9873b4881e97bb081955c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,15 +62,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7405469430649935431, guid: 5bc11926ef9873b4881e97bb081955c4,
+    - target: {fileID: 7405469430649935428, guid: 5bc11926ef9873b4881e97bb081955c4,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7405469430649935431, guid: 5bc11926ef9873b4881e97bb081955c4,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
+      propertyPath: m_Name
+      value: HeavyBulletBoss Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc11926ef9873b4881e97bb081955c4, type: 3}
