@@ -998,6 +998,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 710578ed9866c42f3b213bf21f3df0e6, type: 3}
+--- !u!114 &1610054265 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1520825880705738501, guid: c86de2c1c4e564ecab4938eaa213d04b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8132229262571238724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1862373115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,7 +1126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 529260510}
-  player: {fileID: 0}
   anim: {fileID: 0}
 --- !u!1001 &2121550690
 PrefabInstance:
@@ -1354,6 +1365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1756896419, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
+      propertyPath: beInvulnerableOnHit
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2041143264430225264, guid: c534dbdc7dc1185418cc56567730217b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1409,10 +1424,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1756896419, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
-      propertyPath: beInvulnerableOnHit
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400877255, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
       propertyPath: m_Color.r
       value: 1
@@ -1425,6 +1436,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2041143264430225265, guid: c534dbdc7dc1185418cc56567730217b,
+        type: 3}
+      propertyPath: sPCounter
+      value: 
+      objectReference: {fileID: 1610054265}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
 --- !u!1001 &7118988722976143417
@@ -1496,6 +1512,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 060c90f5c59fa45bc9deb351c6fe32a4, type: 3}
+--- !u!1001 &7663385379871155154
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8886836375561794963, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_Name
+      value: VendingMachine_SP
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435037221595719293, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896913156000218038, guid: fd3036a1e00254066a83fe0b5e717f97,
+        type: 3}
+      propertyPath: sPCounter
+      value: 
+      objectReference: {fileID: 1610054265}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd3036a1e00254066a83fe0b5e717f97, type: 3}
 --- !u!1001 &8132229262571238724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1507,6 +1597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas_HP_UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520825880705738501, guid: c86de2c1c4e564ecab4938eaa213d04b,
+        type: 3}
+      propertyPath: m_Text
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8132229264155987063, guid: c86de2c1c4e564ecab4938eaa213d04b,
         type: 3}

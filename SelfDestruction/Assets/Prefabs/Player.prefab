@@ -131,7 +131,7 @@ MonoBehaviour:
   rigidbody: {fileID: 2041143264430225166}
   moveDone: {x: 0, y: 0}
   jump: 0
-  jumpSpeed: 7
+  jumpSpeed: 25
   moveSpeed: 20
   fallSpeed: 4
   touchGroundToAllowJump: 1
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 2041143264613738463}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

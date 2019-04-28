@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rigidbody;
@@ -21,6 +22,8 @@ public class Player : MonoBehaviour
 
     public float fireRate = 0.1f;
     float fireTime;
+    public int sPCount=0;
+    [SerializeField] private Text sPCounter;
 
     public Animator playerAnimation;
     
@@ -64,7 +67,15 @@ public class Player : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.X)) {
-            arm.SpecialAttack();
+            //sPCount = int.Parse(sPCounter.text);
+            if (sPCount > 0)
+            {
+                
+                arm.SpecialAttack();
+                sPCount--;
+                sPCounter.text = "" + sPCount;
+            }
+
         }
     }
 

@@ -13,7 +13,7 @@ public class SpecialAttackController : MonoBehaviour
     {
         Boss = GameObject.FindGameObjectWithTag("Boss");
         healthcontroller = Boss.GetComponent<HealthController>();
-        healthcontroller.Damage(5);
+        healthcontroller.Damage(15);
         GameObject.FindWithTag("Player").GetComponent<HealthController>().Damage(5);
         forceField.transform.position = Boss.transform.position;
         Destroy(gameObject, 2);
