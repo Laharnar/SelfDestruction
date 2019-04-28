@@ -99,7 +99,7 @@ MonoBehaviour:
   Splash: {fileID: 117145494144408272, guid: 11f6220222934489fa6bfe9db522d77c, type: 3}
   damage: 1
   ignoreTag: Player
-  isPlayerBullet: 0
+  isPlayerBullet: 1
 --- !u!58 &5610164163798802886
 CircleCollider2D:
   m_ObjectHideFlags: 0
