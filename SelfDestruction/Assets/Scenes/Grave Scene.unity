@@ -1164,6 +1164,15 @@ PrefabInstance:
       propertyPath: bossScript.Array.data[8]
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 881670625, guid: 4a1f095dcad614e56af8e4b39c5cef81, type: 3}
+      propertyPath: crosshairPrefab
+      value: 
+      objectReference: {fileID: 3059880805665700224, guid: b95d9b7742c87704fbf2313b4687498a,
+        type: 3}
+    - target: {fileID: 881670625, guid: 4a1f095dcad614e56af8e4b39c5cef81, type: 3}
+      propertyPath: crosshairExplosion
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1534563577699808318, guid: 4a1f095dcad614e56af8e4b39c5cef81,
         type: 3}
       propertyPath: m_LocalPosition.x
