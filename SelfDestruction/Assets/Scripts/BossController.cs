@@ -44,9 +44,15 @@ public class BossController : MonoBehaviour
 
     Transform player;
 
+    public Transform crosshairPrefab;
+    public Transform crosshairExplosion;
+
     // Start is called before the first frame update
     void Start()
     {
+        if (crosshairPrefab == null) {
+            crosshairPrefab = new GameObject().transform;
+        }
         player = GameObject.FindWithTag("Player").transform;
         BossFight(300);
     }
@@ -145,9 +151,18 @@ public class BossController : MonoBehaviour
                 break;
             case BossAction.ShootHeavy:
                 if (bloodFill.bloodWellFull) {
+                    Transform shot = Instantiate(crosshairPrefab, player.transform.position, new Quaternion());
+
                     bloodFill.bloodWellFull = false;
                     yield return new WaitForSeconds(2);
                     bloodAnimator.SetTrigger("EmptyBlood");
+                    Vector2 pos = shot.transform.position;
+
+                    Destroy(shot.gameObject);
+                    yield return new WaitForSeconds(0.1f);
+                    shot = Instantiate(crosshairExplosion, pos, Quaternion.Euler(0, 0, UnityEngine.Random.Range(0, 360)));
+                    Destroy(shot.gameObject, 5);
+
                     ShootHeavy();
                 }
                 waitAnimationEnd = false;
@@ -179,7 +194,7 @@ public class BossController : MonoBehaviour
     void ShootHeavy() {
         gun.armRoot.up = -((Vector2)player.position - (Vector2)transform.position);
 
-        gun.SpecialAttack();
+        //gun.SpecialAttack();
     }
 
     IEnumerator BossMove(float duration)
