@@ -6,10 +6,11 @@ public class Bullet : MonoBehaviour
     public GameObject Splash;
     public int damage = 1;
     public string ignoreTag = "Player";
-
+    public bool isPlayerBullet = true;
 
     private void Start() {
-        GameObject.FindWithTag("Player").GetComponent<HealthController>().Damage(1);
+        if(isPlayerBullet)
+            GameObject.FindWithTag("Player").GetComponent<HealthController>().Damage(1);
         Destroy(gameObject, 2);
     }
 

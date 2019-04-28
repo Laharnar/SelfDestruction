@@ -12912,8 +12912,8 @@ MonoBehaviour:
   armObject: {fileID: 1893953506}
   armSpawnPoint: {fileID: 924608251}
   player: {fileID: 0}
-  bullet: {fileID: 1316678530097453627, guid: d15751b6bb11ce140a85d2138fe658cd, type: 3}
-  specialAttack: {fileID: 1316678530097453627, guid: d15751b6bb11ce140a85d2138fe658cd,
+  bullet: {fileID: 7405469430649935431, guid: 5bc11926ef9873b4881e97bb081955c4, type: 3}
+  specialAttack: {fileID: 4548987441198274542, guid: 97d8f9014625db848bf13336a2753bfe,
     type: 3}
 --- !u!1001 &1915990942
 PrefabInstance:
