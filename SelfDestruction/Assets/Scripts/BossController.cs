@@ -160,10 +160,11 @@ public class BossController : MonoBehaviour
 
                     Destroy(shot.gameObject);
                     yield return new WaitForSeconds(0.1f);
-                    shot = Instantiate(crosshairExplosion, pos, Quaternion.Euler(0, 0, UnityEngine.Random.Range(0, 360)));
+                    if (crosshairExplosion) {  shot = Instantiate(crosshairExplosion, pos, Quaternion.Euler(0, 0, UnityEngine.Random.Range(0, 360)));
                     Destroy(shot.gameObject, 5);
 
                     ShootHeavy();
+                    }
                 }
                 waitAnimationEnd = false;
                 break;
