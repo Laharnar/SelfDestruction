@@ -14,7 +14,6 @@ public class Heavy_Damager : MonoBehaviour
     {
             yield return new WaitForSeconds(1f);
             RaycastHit2D[] hit = Physics2D.CircleCastAll(transform.position, 2f, Vector2.up);
-        Debug.Log(hit.Length);
         for (int i = 0; i<hit.Length; i++)
         if (hit[i].transform != null && hit[i].transform.tag == "Player")
         {
