@@ -26,6 +26,15 @@ public class Player : MonoBehaviour
     [SerializeField] private Text sPCounter;
 
     public Animator playerAnimation;
+
+    public Sprite powerupBody;
+    public Sprite powerupArm;
+    public Sprite normalBody;
+    public Sprite normalArm;
+    public SpriteRenderer bodySprite;
+    public SpriteRenderer hand1;
+    public SpriteRenderer hand2;
+
     
     // Start is called before the first frame update
     void Start()
@@ -62,21 +71,19 @@ public class Player : MonoBehaviour
         Vector3 aimPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         arm.UpdateArmDirection(aimPt, facingDirection < 0); // for negative, turn the aiming
         if (Input.GetKey(KeyCode.Mouse0) && fireTime < Time.time) {
-            fireTime = Time.time + fireRate;
-            arm.Fire();
-        }
-
-        if (Input.GetKeyDown(KeyCode.X)) {
-            //sPCount = int.Parse(sPCounter.text);
             if (sPCount > 0)
             {
-                
                 arm.SpecialAttack();
                 sPCount--;
                 sPCounter.text = "" + sPCount;
+                ChangeSprite();
             }
+            fireTime = Time.time + fireRate;
+            arm.Fire();
 
         }
+
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
@@ -114,5 +121,22 @@ public class Player : MonoBehaviour
             }
             moveDone.y = jump;
         }*/
+    }
+
+    public void ChangeSprite()
+    {
+        if (sPCount > 0)
+        {
+            bodySprite.sprite = powerupBody;
+            hand1.sprite = powerupArm;
+            hand2.sprite = powerupArm;
+        }
+        else
+        {
+            bodySprite.sprite = normalBody;
+            hand1.sprite = normalArm;
+            hand2.sprite = normalArm;
+        }
+            
     }
 }

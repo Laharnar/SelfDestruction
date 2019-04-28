@@ -139,7 +139,16 @@ MonoBehaviour:
   facingDirection: 1
   arm: {fileID: 8630801697783140330}
   fireRate: 0.1
+  sPCount: 0
+  sPCounter: {fileID: 0}
   playerAnimation: {fileID: 0}
+  powerupBody: {fileID: 21300000, guid: 0f15d5e0457bb4d09a97b26a50c8692e, type: 3}
+  powerupArm: {fileID: 21300000, guid: 4e0a34b9dde284d91a4e35d6e072cb73, type: 3}
+  normalBody: {fileID: 21300000, guid: ae8b4c1a17ab29943a10939df0c42aa5, type: 3}
+  normalArm: {fileID: 21300000, guid: 98cb330983d6cb74cb056d303eff435b, type: 3}
+  bodySprite: {fileID: 400877255}
+  hand1: {fileID: 5000706482510655438}
+  hand2: {fileID: 8971025719225442008}
 --- !u!50 &2041143264430225166
 Rigidbody2D:
   serializedVersion: 4
@@ -335,6 +344,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2041143264993026290}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &8971025719225442008 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6930165304018632234, guid: cf27cd6bf03eb7843988c594faa306f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2041143264993026290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2687224754855612900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -438,6 +453,12 @@ Transform:
 --- !u!4 &3487399491553914355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1526522297618070551, guid: cf27cd6bf03eb7843988c594faa306f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2687224754855612900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &5000706482510655438 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6930165304018632234, guid: cf27cd6bf03eb7843988c594faa306f2,
     type: 3}
   m_PrefabInstance: {fileID: 2687224754855612900}
   m_PrefabAsset: {fileID: 0}
