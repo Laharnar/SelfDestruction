@@ -30,6 +30,7 @@ public class BossController : MonoBehaviour
     public HealthController hp;
     public Animator bossAnimator;
     public Animator bloodAnimator;
+    public Animator bouncingAnimator;
     public int startAt = 0;
     public ArmController gun;
     public BossAction[] bossScript;
@@ -55,7 +56,7 @@ public class BossController : MonoBehaviour
             bossStage = 2;
         }
 
-        bossAnimator.SetInteger("BounceAnimation", UnityEngine.Random.Range(0, 2));
+        bouncingAnimator.SetInteger("BounceAnimation", UnityEngine.Random.Range(0, 3));
     }
 
     #region movement
