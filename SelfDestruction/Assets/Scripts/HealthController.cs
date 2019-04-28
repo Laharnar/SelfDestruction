@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class HealthController:MonoBehaviour {
@@ -23,6 +24,10 @@ public class HealthController:MonoBehaviour {
         } else if (beInvulnerableOnHit) { 
             StartCoroutine(Invincibility());
         }
+    }
+
+    internal bool LessThan(float v) {
+        throw new NotImplementedException();
     }
 
     IEnumerator Invincibility() {
