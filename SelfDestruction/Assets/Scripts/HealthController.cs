@@ -21,7 +21,6 @@ public class HealthController:MonoBehaviour {
         
         Bullet bullet = collision.transform.GetComponent<Bullet>();
         if (bullet != null && bullet.ignoreTag != transform.root.tag) {
-            Debug.Log(bullet.ignoreTag);
             Damage(bullet.damage);
         }
     }
