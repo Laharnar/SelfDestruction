@@ -49,6 +49,8 @@ public class BossControllerEditor: Editor {
         }
         if (GUILayout.Button("Add")) {
             t.bossScript.Add(BossAction.Wait1);
+
         }
+        EditorUtility.SetDirty(target);
     }
 }
