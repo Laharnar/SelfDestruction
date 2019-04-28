@@ -132,7 +132,6 @@ MonoBehaviour:
   moveDone: {x: 0, y: 0}
   jump: 0
   jumpSpeed: 7
-  jumpHeight: 4.1
   moveSpeed: 20
   fallSpeed: 4
   touchGroundToAllowJump: 1
@@ -140,6 +139,7 @@ MonoBehaviour:
   facingDirection: 1
   arm: {fileID: 8630801697783140330}
   fireRate: 0.1
+  playerAnimation: {fileID: 0}
 --- !u!50 &2041143264430225166
 Rigidbody2D:
   serializedVersion: 4
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aff7b9a0ed60564aaad8f7727b61508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 100
   beInvulnerableOnHit: 1
   onHitInvulnerabilityDuration: 1
   invulnerabilitySpriteTarget: {fileID: 400877254}

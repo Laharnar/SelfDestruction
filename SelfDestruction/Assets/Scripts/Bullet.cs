@@ -7,7 +7,9 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
     public string ignoreTag = "Player";
 
+
     private void Start() {
+        GameObject.FindWithTag("Player").GetComponent<HealthController>().Damage(1);
         Destroy(gameObject, 2);
     }
 

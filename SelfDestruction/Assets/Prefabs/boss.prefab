@@ -4865,7 +4865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aff7b9a0ed60564aaad8f7727b61508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
+  health: 100
   beInvulnerableOnHit: 1
   onHitInvulnerabilityDuration: 1
   invulnerabilitySpriteTarget: {fileID: 0}
@@ -4882,6 +4882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc0a24110668a4c8db0a6acc9b0fa65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: {fileID: 0}
   bossAnimator: {fileID: 6810419760531052582}
   bossScript: 00000000050000000500000006000000030000000700000002000000050000000400000004000000040000000100000000000000
 --- !u!50 &6666199566244761803
@@ -4988,15 +4989,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3200634507804162653, guid: cf27cd6bf03eb7843988c594faa306f2,
-        type: 3}
-      propertyPath: m_Name
-      value: SpriteHand
-      objectReference: {fileID: 0}
     - target: {fileID: 2636612494603918642, guid: cf27cd6bf03eb7843988c594faa306f2,
         type: 3}
       propertyPath: m_Name
       value: SpawnPointHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200634507804162653, guid: cf27cd6bf03eb7843988c594faa306f2,
+        type: 3}
+      propertyPath: m_Name
+      value: SpriteHand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf27cd6bf03eb7843988c594faa306f2, type: 3}

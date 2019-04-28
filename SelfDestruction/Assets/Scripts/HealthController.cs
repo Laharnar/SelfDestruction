@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 
 public class HealthController:MonoBehaviour {
-    public int health=5;
+    public int health=100;
     public bool beInvulnerableOnHit = true;
     public float onHitInvulnerabilityDuration = 1;
     public Transform invulnerabilitySpriteTarget;// which sprite should dissapear when invulnerable
