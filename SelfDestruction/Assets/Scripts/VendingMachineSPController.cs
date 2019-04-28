@@ -20,7 +20,6 @@ public class VendingMachineSPController : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-
             if (Time.time > collectTime && player.sPCount < player.sPMax)
             {
                 collectTime = Time.time + collectRate;
