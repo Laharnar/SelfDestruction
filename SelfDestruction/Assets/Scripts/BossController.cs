@@ -61,7 +61,7 @@ public class BossController : MonoBehaviour
         if (Time.time > 2) {
             bossStage = 1;
         }
-        if (Time.time > 4) {
+        if (Time.time > 6) {
             bossStage = 2;
         }
 
@@ -199,9 +199,9 @@ public class BossController : MonoBehaviour
 
     IEnumerator BossMove(float duration)
     {
-        while (true) {
+        //while (true) {
             yield return StartCoroutine(ExecuteScript());
-        }
+        //}
     }
 
     
