@@ -17,6 +17,7 @@ public class CameraController:MonoBehaviour {
 
             int x = boss.bossStage;
             if (x > cameraStage) {
+                cameraStage = x;
                 MoveCameraToNextStage();
             }
 

@@ -27,13 +27,18 @@ public class Bullet : MonoBehaviour
             Instantiate(Splash, transform.position, transform.rotation);
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "Boss")
+        if (collision.gameObject.tag == "Boss" && ignoreTag != "Boss")
         {
             Instantiate(Splash, transform.position, transform.rotation);
             collision.gameObject.GetComponent<HealthController>().Damage(1);
             Destroy(gameObject);
 
         }
+        if (collision.gameObject.tag == "Player" && ignoreTag != "Player") {
+            Instantiate(Splash, transform.position, transform.rotation);
+            collision.gameObject.GetComponent<HealthController>().Damage(1);
+            Destroy(gameObject);
 
+        }
     }
 }
