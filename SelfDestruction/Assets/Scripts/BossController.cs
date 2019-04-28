@@ -20,6 +20,7 @@ public class BossController : MonoBehaviour
 {
     public HealthController hp;
     public Animator bossAnimator;
+    public Animator bloodAnimator;
     public BossAction[] bossScript;
 
     bool waitAnimationEnd = false;
@@ -38,6 +39,8 @@ public class BossController : MonoBehaviour
         if (Time.time > 4) {
             bossStage = 2;
         }
+
+        bossAnimator.SetInteger("BounceAnimation", UnityEngine.Random.Range(0, 2));
     }
 
     void GoUpLeft()
