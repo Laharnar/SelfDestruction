@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController:MonoBehaviour {
     public BossController boss;
@@ -12,6 +13,12 @@ public class CameraController:MonoBehaviour {
     }
 
     private void Update() {
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Main");
+        }
+            
         
         if (boss) {
 
