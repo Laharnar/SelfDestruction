@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public enum BossAction {
     UpLeft,
     UpRight,
@@ -27,12 +29,14 @@ public enum BossAction {
 }
 public class BossController : MonoBehaviour
 {
+    public float[] actionTimes = new float[20];
     public HealthController hp;
     public Animator bossAnimator;
     public Animator bloodAnimator;
+    public Animator bouncingAnimator;
     public int startAt = 0;
     public ArmController gun;
-    public BossAction[] bossScript;
+    public List<BossAction> bossScript=new List<BossAction>();
     public BloodAnimationController bloodFill;
 
     bool waitAnimationEnd = false;
@@ -55,7 +59,7 @@ public class BossController : MonoBehaviour
             bossStage = 2;
         }
 
-        bossAnimator.SetInteger("BounceAnimation", UnityEngine.Random.Range(0, 2));
+        bouncingAnimator.SetInteger("BounceAnimation", UnityEngine.Random.Range(0, 3));
     }
 
     #region movement
@@ -90,9 +94,9 @@ public class BossController : MonoBehaviour
         StartCoroutine(BossMove(duration));
     }
 
-    public IEnumerator ExecuteScript(params BossAction[] directions) {
-        for (int i = startAt; i < directions.Length; i++) {
-            yield return StartCoroutine(ExecuteSingleCommand(directions[i]));
+    public IEnumerator ExecuteScript() {
+        for (int i = startAt; i < bossScript.Count; i++) {
+            yield return StartCoroutine(ExecuteSingleCommand(bossScript[i]));
             while (waitAnimationEnd) {
                 yield return null;
             }
@@ -181,7 +185,7 @@ public class BossController : MonoBehaviour
     IEnumerator BossMove(float duration)
     {
         while (true) {
-            yield return StartCoroutine(ExecuteScript(bossScript));
+            yield return StartCoroutine(ExecuteScript());
         }
     }
 

@@ -1430,10 +1430,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1756896419, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
-      propertyPath: beInvulnerableOnHit
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2041143264430225264, guid: c534dbdc7dc1185418cc56567730217b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1489,23 +1485,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400877255, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400877255, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400877255, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2041143264430225265, guid: c534dbdc7dc1185418cc56567730217b,
-        type: 3}
-      propertyPath: sPCounter
-      value: 
-      objectReference: {fileID: 1610054265}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
 --- !u!1001 &7118988722976143417

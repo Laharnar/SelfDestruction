@@ -941,6 +941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: boss
       objectReference: {fileID: 0}
+    - target: {fileID: 881670625, guid: 4a1f095dcad614e56af8e4b39c5cef81, type: 3}
+      propertyPath: bossAnimator
+      value: 
+      objectReference: {fileID: 1297963398}
     - target: {fileID: 1534563577699808318, guid: 4a1f095dcad614e56af8e4b39c5cef81,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -996,12 +1000,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 881670625, guid: 4a1f095dcad614e56af8e4b39c5cef81, type: 3}
-      propertyPath: bossAnimator
-      value: 
-      objectReference: {fileID: 1297963398}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a1f095dcad614e56af8e4b39c5cef81, type: 3}
+--- !u!114 &458945387 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1717552348, guid: 4a1f095dcad614e56af8e4b39c5cef81,
+    type: 3}
+  m_PrefabInstance: {fileID: 458945386}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff7b9a0ed60564aaad8f7727b61508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &492717631
 GameObject:
   m_ObjectHideFlags: 0
@@ -4022,6 +4034,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c534dbdc7dc1185418cc56567730217b, type: 3}
+--- !u!114 &1660619699 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1756896419, guid: c534dbdc7dc1185418cc56567730217b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1660619698}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff7b9a0ed60564aaad8f7727b61508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1676425702
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,6 +4195,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1285470351993658538, guid: c86de2c1c4e564ecab4938eaa213d04b,
+        type: 3}
+      propertyPath: hp
+      value: 
+      objectReference: {fileID: 1660619699}
+    - target: {fileID: 9025400985179548810, guid: c86de2c1c4e564ecab4938eaa213d04b,
+        type: 3}
+      propertyPath: hp
+      value: 
+      objectReference: {fileID: 458945387}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c86de2c1c4e564ecab4938eaa213d04b, type: 3}
 --- !u!4 &1725958677 stripped
