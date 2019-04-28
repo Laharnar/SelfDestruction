@@ -67,5 +67,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HeavyBulletBoss Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7405469430649935429, guid: 5bc11926ef9873b4881e97bb081955c4,
+        type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc11926ef9873b4881e97bb081955c4, type: 3}
